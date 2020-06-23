@@ -50,6 +50,7 @@ public:
     		}
     		accumulateNumSquare.push_back(tempMin);
     	}
+        // std::cout<<accumulateNumSquare[n]<<"--"<<accumulateNumSquare.back()<<std::endl;
     	return accumulateNumSquare[n];   
     	// return accumulateNumSquare.back();  //why it does not run?
     }
@@ -57,6 +58,6 @@ public:
 
 int main () {
 	Solution sol;
-	std::cout<<sol.numSquares3(4)<<std::endl;
+	std::cout<<sol.numSquares3(9)<<std::endl;
 	return 0;
 }
