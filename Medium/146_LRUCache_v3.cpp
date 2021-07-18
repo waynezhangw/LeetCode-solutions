@@ -10,6 +10,8 @@ using std::pair;
 using std::make_pair;
 
 //this version faster 30.64% than and less than 22.50%
+//for those who has better time complexity is to implement double list themselves 
+//instead of using standard library
 class LRUCache {  //this version is directly from comments
 private:
     unsigned int capacity;
