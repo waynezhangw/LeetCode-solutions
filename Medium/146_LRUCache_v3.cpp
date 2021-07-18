@@ -48,12 +48,15 @@ public:
     }
 
     void updateList(int key, int value) { 
-        mylist.erase(myMap[key]);  // this is O(1)
+        // this is O(1) since I can know which position to erase in O(1) time
+        mylist.erase(myMap[key]);
         mylist.push_front( make_pair(key, value) );
         myMap[key] = mylist.begin();
     }
 };
 
+
+//I couldn't really understand the code logic until I put it in VS Studio and debug it line by line
 
 int main() {
     LRUCache lRUCache  = LRUCache(2);
